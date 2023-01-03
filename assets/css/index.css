@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+.header-content {
+    background-color: #1d1d1d;
+    display: flex;
+    padding: 1.3rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+}
+
+.header-content h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.header-content div.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5rem 2rem;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 20em;
+    transition: all ease-in-out 0.5s;
+    margin-right: -2rem;
+}
+
+.search__input:hover,
+.search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+}
+
+.search__input:focus + .search__button {
+    background-color: #f0eeee;
+}
+
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: 0.1em;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+}
+
+.header-content h1 {
+    color: #a7e148;
+}
+
+nav {
+    background-color: #272727;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav button {
+    font-size: 21px;
+    color: #fff;
+}
+
+nav li {
+    padding: 0 2rem;
+}
+
+.btn-nav {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #a7e148;
+    color: ghostwhite;
+}
+
+.btn-nav a {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    color: #fff;
+}
+
+.btn-nav:hover a {
+    color: black;
+}
+
+.btn-nav::before,
+.btn-nav::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn-nav::before {
+    content: "";
+    background: #272727;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-nav:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.first-section-content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 10rem 0 7rem;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 10rem 0 7rem;
+}
+
+.section-content h1,
+.first-section-content h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #333;
+}
+
+.section-content h2,
+.first-section-content h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-content p,
+.first-section-content p {
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+section img {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.section-content h3 {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.icons-tipografico {
+    width: 6rem;
+    padding: 1rem 0;
+}
+
+.icons-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+}
+
+.sumario {
+    margin: 5rem 0 0 3rem;
+    border: 1px solid black;
+    padding: 1rem;
+    height: 100%;
+}
+
+.sumario ul {
+    width: 13rem;
+}
+
+.sumario ul ul {
+    margin: 0rem 0 0rem 1rem;
+}
+
+.sumario ul li {
+    margin: 0.5rem 0 0 0;
+}
+
+.sumario a {
+    color: #1a1a1a;
+}
