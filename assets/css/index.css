@@ -263,7 +263,13 @@ main {
     color: #1a1a1a;
 }
 
+.sumario a:hover {
+    color: #a7e148;
+    font-weight: 800;
+}
+
 footer {
+    margin-top: 2rem;
     background-color: #1a1a1a;
     height: 9vh;
     display: flex;
